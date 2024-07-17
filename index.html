@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phrasal verb jamia training college</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+       height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg_custom_header{
+        background-color: black;
+    }
+
+    .Main_name{
+        font-size: 30px;
+        margin-bottom: 3px;
+    }
+
+    .main_caption{
+
+    }
+
+    .bg_custom_footer{
+        background-color: black;
+        margin-top: 500px;
+    }
+   
+   .input_box{
+        border-radius: 20px;
+        width: 80%;
+        padding: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: none;
+        box-shadow: 0 0px 4px rgba(0, 0, 0, 0.4);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .input_box:hover{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .form_here{
+        margin-top: 200px;
+    }
+    .form_div{
+        width:80%;
+    }
+
+    .display_p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    @media (max-width: 750px) {
+      .form_div{
+        width: 90%;
+      }
+      .Main_name{
+        font-size: 24px;
+      }
+    }
+     @media (max-width: 450px) {
+      .form_div{
+        width: 100%;
+        margin-left: 30px;
+      }
+      .bg_custom_header{
+        height: 90px;
+      }
+      .main_caption{
+        font-size: 14px;
+      }
+       .display_p{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    }
+    
+
+  </style>
+</head>
+
+<body>
+   <div class="fixed-top">
+    <header class="bg_custom_header">
+      <div class="row text-white">
+        <div class="col-md-6 col-9 p-3 pl-5">
+          <p class="Main_name" style="color: white;">Rahul R Kumar</p>
+          <p class="main_caption">Jamia training college</p>
+        </div>
+    </header>
+  </div>
+
+     <div class="form_div">
+    <form class="form_here" enctype="multipart/form-data" id="verbForm">
+      <div class="form-group">
+        <input type="text" name="V1Verb" class="form-control input_box" placeholder="Enter the phrasal verb" required>
+      </div>
+      <button style="margin-left: 8px;" type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+    <div id="result" style="margin-top: 50px;">
+      <p class="display_p" id="v3"></p>
+    </div>
+  </div>
+
+
+  <!--<footer class="bg_custom_footer " style="height: 80px;">
+      <div class="container d-flex align-items-center justify-content-center h-100">
+          <h6 class="text-center text-white">Thank you and have a great day</h6>
+      </div>
+  </footer>-->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/02f66249c3.js" crossorigin="anonymous"></script>
+  
+  
+   <script>
+    document.getElementById('verbForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var v1 = document.querySelector('input[name="V1Verb"]').value.trim().toLowerCase();
+
+      var verbs = {
+        'do without': { 'v3': 'not require' },
+        'fall apart': { 'v3': 'fall into pieces' },
+        'fall behind': { 'v3': 'fail to keep up pace' },
+        'fall in with': { 'v3': 'meet by chance' },
+        'fall off': { 'v3': 'decrease, drop from' },
+        'fall out with': { 'v3': 'quarrel with' },
+        'fall through': { 'v3': 'fail' },
+        'fall for': { 'v3': 'be in love with' },
+        'fall out': { 'v3': 'quarrel' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+        '': { 'v3': '' },
+
+        // add more verbs here
+      };
+
+      var resultDiv = document.getElementById('result');
+      var v3 = document.getElementById('v3');
+
+      if (verbs[v1]) {
+        v3.innerHTML = 'Meaning:&nbsp;&nbsp;&nbsp;&nbsp;' + verbs[v1].v3;
+      } else {
+        v3.innerText = 'Meaning: Not found';
+      }
+    });
+  </script>
+ 
+</body>
+</html>
